@@ -11,5 +11,14 @@ function hellodrupal_menu() {
  * Implements hook_theme().
  */
 function hellodrupal_theme() {
-  return array();
+  $theme_hooks = array();
+
+  $theme_hooks['hellodrupal_hello'] = array(
+    'variables' => array(
+      'name' => NULL,
+    ),
+    'template' => 'hellodrupal-hello',
+  );
+
+  return $theme_hooks;
 }
