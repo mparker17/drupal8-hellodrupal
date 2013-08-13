@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function hellodrupal_menu() {
+  return array();
+}
+
+/**
+ * Implements hook_theme().
+ */
+function hellodrupal_theme() {
+  return array();
+}

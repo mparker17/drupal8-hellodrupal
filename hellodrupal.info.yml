@@ -1,0 +1,4 @@
+name: Hellodrupal
+type: module
+description: 'An example hello world module to learn Drupal 8, as part of Palantir.net Drupal 8 Training.'
+core: 8.x

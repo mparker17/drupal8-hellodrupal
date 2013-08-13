@@ -1,0 +1,20 @@
+hellodrupal.hello:
+  pattern: '/hello'
+  defaults:
+    _content: '\Drupal\hellodrupal\Controller\HelloController::hello_html'
+  requirements:
+    _permission: 'access content'
+
+hellodrupal.hello_json:
+  pattern: '/hello_json'
+  defaults:
+    _controller: '\Drupal\hellodrupal\Controller\HelloController::hello_json'
+  requirements:
+    _permission: 'access content'
+
+hellodrupal.hello_name:
+  pattern: '/hello/{name}'
+  defaults:
+    _content: '\Drupal\hellodrupal\Controller\HelloController::hello_name'
+  requirements:
+    _permission: 'access content'
