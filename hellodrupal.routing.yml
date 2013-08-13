@@ -6,13 +6,13 @@ hellodrupal.hello:
     _permission: 'access content'
 
 hellodrupal.hello_json:
-  pattern: '/hello_json'
+  pattern: '/helloJson'
   defaults:
     _controller: '\Drupal\hellodrupal\Controller\HelloController::hello_json'
   requirements:
     _permission: 'access content'
 
-hellodrupal.hello_name:
+hellodrupal.helloName:
   pattern: '/hello/{name}'
   defaults:
     _content: '\Drupal\hellodrupal\Controller\HelloController::hello_name'

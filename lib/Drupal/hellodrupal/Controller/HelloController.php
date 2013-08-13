@@ -10,11 +10,11 @@ use Symfony\Component\HttpFoundation\JsonResponse;
  */
 class HelloController extends ControllerBase {
 
-  public function hello_html() {
+  public function helloHtml() {
     return 'Hello world!';
   }
 
-  public function hello_json() {
+  public function helloJson() {
     $response = new JsonResponse(array(
       'Hello' => 'Hello world',
     ));
@@ -22,7 +22,7 @@ class HelloController extends ControllerBase {
     return $response;
   }
 
-  public function hello_name($name) {
+  public function helloName($name) {
     return 'Hello ' . check_plain($name) . '!';
   }
 
